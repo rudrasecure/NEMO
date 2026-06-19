@@ -185,9 +185,9 @@ void Menu_Controller::initializeMenus() {
     manufacturerMenu = new Menu(screen, String("MANUFACTURER"), manufacturerChoices, MANUFACTURER_COUNT, 1);
 
     // Initialize attacks menu
-    attacksChoices[0] = {String("DOS Attack"), callback_SpamAttack};
-    attacksChoices[1] = {String("Impersonate"), callback_Impersonate};
-    attacksMenu = new Menu(screen, String("ATTACKS"), attacksChoices, attacksChoicesNum, 1);
+    attacksChoices[0] = {String("No Opdos"), callback_SpamAttack};
+    attacksChoices[1] = {String("No Operson"), callback_Impersonate};
+    attacksMenu = new Menu(screen, String("No op"), attacksChoices, attacksChoicesNum, 1);
 
     // Initialize about menu
     aboutChoices[0] = {String("Info"), callback_AboutInfo};

@@ -111,7 +111,7 @@ void Attack_Controller::setImpersonatingOwnSensor(bool own, uint8_t sensorIndex)
  * @note Used for display purposes in the UI to show attack status.
  */
 String Attack_Controller::getAttackStatusString() {
-    if (spamAttackActive) return "DOS Attack";
+    if (spamAttackActive) return "Nodos";
     if (impersonateActive) {
         DeviceInfo* device = monitor->getDevice(impTargetAddress);
         if (device) return "Imp:" + device->name.substring(0, 10);

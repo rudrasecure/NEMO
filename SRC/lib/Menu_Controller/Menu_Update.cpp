@@ -399,7 +399,7 @@ void Menu_Controller::update() {
         if(currentTime - lastAttackIndicatorUpdate > 500) {
             lastAttackIndicatorUpdate = currentTime;
             screen->setInverseFont(1);
-            screen->drawString(0, 7, "!Attack Active  ");
+            screen->drawString(0, 7, "!TX Active  ");
             screen->setInverseFont(0);
         }
     }

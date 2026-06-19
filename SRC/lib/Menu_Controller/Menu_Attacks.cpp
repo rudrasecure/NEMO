@@ -36,8 +36,8 @@ bool Menu_Controller::isAttackActive() {
 void Menu_Controller::displaySpamConfig() {
     prepScreen();
 
-    screen->drawString(0, 0, "DOS Attack");
-    screen->drawString(0, 5, "SELECT to start");
+    screen->drawString(0, 0, "Nodos");
+    screen->drawString(0, 5, "Dont SELECT");
     screen->drawString(0, 7, "< BACK");
 }
 
@@ -63,8 +63,8 @@ void Menu_Controller::displaySpamActive() {
         displayedLines[i] = "";
     }
 
-    screen->drawString(0, 0, "DOS ATTACK");
-    displayedLines[0] = "DOS ATTACK";
+    screen->drawString(0, 0, "DS TX");
+    displayedLines[0] = "DS TX";
 
     displayedLines[2] = "";
 
@@ -401,14 +401,14 @@ void Menu_Controller::displayAttackStatus() {
     // Reset scroll offset when first displaying
     attackStatusScrollOffset = 0;
 
-    screen->drawString(0, 0, "ATTACK ACTIVE");
-    displayedLines[0] = "ATTACK ACTIVE";
+    screen->drawString(0, 0, "TX ACTIVE");
+    displayedLines[0] = "TX ACTIVE";
 
     AttackType attackType = attackController->getActiveAttackType();
 
     if (attackType == ATTACK_SPAM) {
-        screen->drawString(0, 2, "Type: DOS Attack");
-        displayedLines[2] = "DOS Attack";  // Store type name for consistency
+        screen->drawString(0, 2, "Type: DS TX");
+        displayedLines[2] = "DS TX";  // Store type name for consistency
 
         char line[17];
         snprintf(line, sizeof(line), "Msgs: %lu", attackController->getSpamMessageCount());

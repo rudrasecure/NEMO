@@ -804,7 +804,7 @@ void Menu_Controller::changeMenu(MenuID newMenuID) {
     // Show attack indicator on bottom row if attack active and on main menu
     if(newMenuID == MENU_MAIN && attackController->isAttackActive()) {
         screen->setInverseFont(1);
-        screen->drawString(0, 7, "!Attack Active  ");
+        screen->drawString(0, 7, "!TX Active  ");
         screen->setInverseFont(0);
     }
 }
