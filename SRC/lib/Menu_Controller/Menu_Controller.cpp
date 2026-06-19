@@ -162,7 +162,7 @@ void Menu_Controller::prepScreen(){
 void Menu_Controller::initializeMenus() {
     // Initialize main menu - keep strings short (max ~13 chars for option text with " * " prefix)
     mainChoices[0] = {String("Live Data"), callback_SensorReadings};
-    mainChoices[1] = {String("Attacks"), callback_Attacks};
+    mainChoices[1] = {String("No Op"), callback_Attacks};
     mainChoices[2] = {String("Configure"), callback_Configure};
     mainChoices[3] = {String("About"), callback_About};
     mainMenu = new Menu(screen, String("MAIN MENU"), mainChoices, mainChoicesNum, 1);

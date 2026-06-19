@@ -23,7 +23,7 @@
 #include <N2K_Monitor.h>
 #include <Attack_Controller.h>
 #include <Menu_Controller.h>
-#include <Splash_Screen.h>
+#include <Splash_Custom.h>
 #include <Sensor.h>
 
 
@@ -176,7 +176,7 @@ void setup(void)
   NMEA2000_CAN2.Open();
 
   // Show splash screen animation
-  Splash_Screen::show(&u8g2);
+  Splash_Custom::show(&u8g2);
 
   // Initialize display for menu system
   u8x8.begin();
